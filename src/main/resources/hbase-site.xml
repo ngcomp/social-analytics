@@ -1,0 +1,31 @@
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+
+    <property>
+        <name>hbase.rpc.timeout</name>
+        <value>60000</value>
+    </property>
+
+
+    <property>
+    <name>hbase.zookeeper.quorum</name>
+        <value>mzookeeper01,mzookeeper02,mzookeeper03</value>
+        <!--<value>zookeeper-01,zookeeper-02,zookeeper-03</value>-->
+        <description>
+            The host and port that the HBase master runs at.
+        </description>
+    </property>
+
+    <property>
+        <name>hbase.cluster.distributed</name>
+        <value>true</value>
+        <final>true</final>
+    </property>
+
+    <property>
+        <name>hbase.client.write.buffer</name>
+        <value>20971520</value>
+    </property>
+
+</configuration>
+
